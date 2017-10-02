@@ -1,15 +1,17 @@
-Line Alphat JS
+Line Bot
 
 # require node >= v8.x.x
 check your nodejs version
 `node -v`
-[upgrade nodejs](https://google.com/)
 
 
 How to run ?
 ------
-- `git clone https://github.com/alfathdirk/LineAlphatJS.git`
-- `cd LineAlphatJS && npm install`
+- `pkg install git -y`
+- `pkg install nodejs -y`
+- `git clone https://github.com/fianchiks/LineBot.git`
+- `cd LineBot && npm install`
+- `pkg install nodejs-current`
 - `npm start`
 
 
@@ -21,4 +23,4 @@ Still work :construction_worker:
 
 Author
 ------
-[@alfathdirk](https://instagram.com/alfathdirk)
+[@muhammadalviann](https://instagram.com/muhammadalviann)
