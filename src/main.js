@@ -240,11 +240,10 @@ class LINE extends LineAPI {
         }  
 
         if(txt == 'Point'|| txt == 'point'){
-	    this._sendMessage(seq, `========= T E R C Y D U K =======`);
             let rec = await this.recheck(this.checkReader,seq.to);
             const mentions = await this.mention(rec);
             seq.contentMetadata = mentions.cmddata;
-            await this._sendMessage(seq,mentions.names.join(''));
+            await this._sendMessage((seq,`==== TERCYDUK =====`)(seq,mentions.names.join(''));
             
         }
         if(seq.contentType == 13) {
