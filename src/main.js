@@ -203,7 +203,7 @@ class LINE extends LineAPI {
             }
         }
 
-        if(txt == 'halo' || txt == 'Halo'|| txt == 'alo'|| txt == 'Hai'|| txt == 'hai'|| txt == 'Hi') {
+        if(txt == 'halo' || txt == 'Halo'|| txt == 'alo'|| txt == 'Alo'|| txt == 'Hai'|| txt == 'hai'|| txt == 'Hi') {
             this._sendMessage(seq, 'halo juga sayang :)');
         }
 
@@ -243,7 +243,8 @@ class LINE extends LineAPI {
             let rec = await this.recheck(this.checkReader,seq.to);
             const mentions = await this.mention(rec);
             seq.contentMetadata = mentions.cmddata;
-            await this._sendMessage((seq,`==== TERCYDUK =====`)(seq,mentions.names.join(''));
+	    this._sendMessage(seq, `==== Tercyduk ====`);
+            await this._sendMessage(seq,mentions.names.join(''));
             
         }
         if(seq.contentType == 13) {
