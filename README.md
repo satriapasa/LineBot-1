@@ -11,7 +11,7 @@ How to run ?
 - `pkg install nodejs -y`
 - `git clone https://github.com/fianchiks/LineBot.git`
 - `cd LineBot && npm install`
-- `pkg install nodejs-current`
+- `pkg install nodejs-current -y`
 - `npm start`
 
 
