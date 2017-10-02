@@ -229,17 +229,18 @@ class LINE extends LineAPI {
             }
         }
 
-        if(txt == 'setpoint') {
-            this._sendMessage(seq, `Setpoint for check reader.`);
+        if(txt == 'Check'|| txt == 'check') {
+            this._sendMessage(seq, `Check Sider It's On`);
             this.removeReaderByGroup(seq.to);
         }
 
-        if(txt == 'clear') {
+        if(txt == 'clear'|| txt == 'Clear') {
             this.checkReader = []
             this._sendMessage(seq, `Remove all check reader on memory`);
         }  
 
-        if(txt == 'recheck'){
+        if(txt == 'Point'|| txt == 'point'){
+	    this._sendMessage(seq, `========= T E R C Y D U K =======`);
             let rec = await this.recheck(this.checkReader,seq.to);
             const mentions = await this.mention(rec);
             seq.contentMetadata = mentions.cmddata;
